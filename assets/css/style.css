@@ -139,12 +139,17 @@ img {
 
 /*--------------- CLASS CSS-------------------*/
 .section {
-    padding: 1rem 0 2rem;
+    padding: 3rem 0 3rem;
+    
 }
 
 .section-title,
 .section-subtitle {
     text-align: center;
+}
+
+h1.section-title{
+    margin-top: -10px;
 }
 
 .section-title {
@@ -207,6 +212,26 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 3rem 0;
+}
+
+.modal{
+    width: 500px;
+    height: 500px;
+    background: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+
+.section-title{
+    margin-top: 100px;
+}
+
+.card__preci {
+    color: black;
 }
 
 .card {
@@ -540,8 +565,16 @@ img {
     font-weight: var(--font-bold);
     font-size: var(--h2-font-size);
     margin-bottom: var(--mb-2);
+    margin-top: 40px;
 }
 
+.btn-inital{
+    width: 100%;
+}
+
+.btn-outline{
+    width: 100%;
+}
 .contato__cta p {
     font-weight: var(--normal-font-size);
     font-size: var(--h3-font-size);
@@ -734,6 +767,7 @@ textarea {
         --normal-font-size: 1rem;
         --small-font-size: 0.875rem;
     }
+
     .logo{
         margin: 0 2rem;
     }
@@ -801,6 +835,10 @@ textarea {
         padding: 0 3REM;
     }
 
+    .card__data{
+        font-size: 10px;
+    }
+
     .about__container {
         padding: 0;
         grid-template-columns: repeat(2, 1fr);
@@ -828,5 +866,59 @@ textarea {
         padding: 0;
         grid-template-columns: repeat(4, 1fr);
     }
+}
+
+@media (max-width: 960px){
+    .home__title{
+        font-size: 32px;
+        margin-top: 18px;
+        position: relative;
+    }
+
+    .logo{
+        margin-top: -5px;
+        position: relative;
+    }
+    .card{
+        width: 230px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .btn-outline{
+        width: 100%;
+    }
+    .contato__data{
+        display: block;
+        align-items: center;
+        position: relative;
+        justify-content: space-between;
+    }
+
+    .btn {
+        margin-top: px;
+    }
+    .contato__title{
+        text-align: center;
+    }
+    .contato section{
+        align-items: center;
+        justify-content: center;
+        margin-left: -100px;
+    }
+    .bd-container {
+        max-width: 1024px;
+        width: calc(100% - 2rem);
+        margin: 0 auto;
+    }
+
+    .cardapio__container{
+        margin: 0 0 0 0;
+    }
+
+    section#cardapio.cardapio.section {
+        margin-bottom: -50px;
+    }
+
 }
 

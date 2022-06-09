@@ -65,3 +65,8 @@ function novaAba(){
     'pagina',
     "width=350, height=255, top=100, left=110, scrollbars=no " );
 }
+
+function acao() {
+    let modal = document.querySelector('.modal')
+    modal.style.display = 'block';
+}
