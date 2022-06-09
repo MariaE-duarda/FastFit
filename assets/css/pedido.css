@@ -54,7 +54,7 @@ body {
 }
 
 .home__title {
-    font-size: 30px;
+    font-size: 50px;
     color: var(--text-color);
     display: block;
     position: relative;
@@ -63,7 +63,7 @@ body {
 
 .logo{
     font-family: var(--font-logo);
-    font-size: 40px;
+    font-size: 50px;
     padding-top: 3rem;
     background: linear-gradient(to right, #F66B0E 0%, #EB5353 100%);
     background-clip: text;
@@ -113,13 +113,17 @@ div a .btn-outline{
     padding: 0 3rem;
 }
 
+table.table{
+    font-size: 27px;
+}
+
 .btn-outline {
     width: 30%;
     background-color:transparent;
     border: 1px solid var(--first-color);
     color: var(--first-color);
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 0;
     font-size: var(--normal-font-size);
     font-weight: var(--font-bold);
     letter-spacing: 4px;
@@ -141,15 +145,16 @@ div a .btn-outline{
 @media (max-width: 960px){
     table{
         margin-top: 20px;
-        font-size: 20px;
+        font-size: 15.5px;
     }
     th{
-        padding: 5px;
+        padding: 5px 20px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
     .btn-outline{
-        width: 50%;
+        width: 90%;
         font-size: 13px;
-        padding: 0.5rem 3rem;
         letter-spacing: 1px;
     }
     .logo{
@@ -169,6 +174,8 @@ div a .btn-outline{
         padding-top: 5px;
         padding-bottom: 5px;
     }
-
+    table.table{
+        font-size: 17px;
+    }
 
 }

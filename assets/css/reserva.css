@@ -76,14 +76,14 @@ table{
     align-items: center;
     justify-content: center;
     display: flex;
-    font-size: 25px;
+    font-size: 20px;
     position: relative;
     border: none;
     border-radius: 10px;
 }
 
 th{
-    padding: 10px 30px 10px 30px;
+    padding: 10px 10px 10px 10px;
     border-radius: 5px;
     background: linear-gradient(to right, #F15412 0%, #EB5353 50%, #c63838 100%);
     color: white;
@@ -114,12 +114,12 @@ div a .btn-outline{
 }
 
 .btn {
-    width: 50%;
+    width: 30%;
     background: linear-gradient(to right, #F15412 0%, #EB5353 100%);
     border: none;
     outline: none;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 0;
     font-size: var(--normal-font-size);
     font-weight: var(--font-bold);
     letter-spacing: 4px;
@@ -138,50 +138,24 @@ div a .btn-outline{
     border: 2px solid #F15412;
 }
 
-.btn-outline {
-    width: 30%;
-    background-color:transparent;
-    border: 1px solid var(--first-color);
-    color: var(--first-color);
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 0.5rem 1.5rem;
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-bold);
-    letter-spacing: 4px;
-    text-align: center;
-    outline: none;
-    border-radius: 6px;
-    display: inline-block;
-    margin: 0 auto;
-    transition: all 0.4s ease-in-out;
-    cursor: pointer;
-}
-
-.btn-outline:hover {
-    background-color: var(--first-color_alt);
-    border: 1px solid var(--light-color);
-    color: var(--light-color);
-}
-
 @media (max-width: 960px){
     table{
         margin-top: 20px;
-        font-size: 20px;
+        font-size: 15px;
     }
     th{
         padding: 5px;
     }
     .btn{
-        width: 50%;
+        width: 90%;
         font-size: 13px;
-        padding: 0.5rem 3rem;
         letter-spacing: 1px;
     }
     .logo{
-        font-size: 40px;
+        font-size: 35px;
     }
     .home__title{
-        font-size: 35px;
+        font-size: 30px;
     }
     body{
         margin-top: 20px;
