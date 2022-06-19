@@ -110,7 +110,7 @@ img {
 }
 
 .btn:hover {
-    letter-spacing: 6px;
+    letter-spacing: 3px;
 }
 
 .btn-outline {
@@ -131,10 +131,15 @@ img {
     transition: all 0.4s ease-in-out;
 }
 
+button.btn:hover{
+    cursor: pointer;
+}
+
 .btn-outline:hover {
     background-color: var(--first-color_alt);
     border: 1px solid var(--light-color);
     color: var(--light-color);
+    cursor: pointer;
 }
 
 /*--------------- CLASS CSS-------------------*/

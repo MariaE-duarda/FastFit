@@ -80,6 +80,7 @@ table{
     position: relative;
     border: none;
     border-radius: 10px;
+    cursor: default;
 }
 
 th{
@@ -136,6 +137,7 @@ div a .btn-outline{
     background: transparent;
     color: #F15412;
     border: 2px solid #F15412;
+    cursor: pointer;
 }
 
 @media (max-width: 960px){

@@ -80,6 +80,7 @@ table{
     position: relative;
     border: none;
     border-radius: 10px;
+    cursor: default;
 }
 
 th{
