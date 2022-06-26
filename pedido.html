@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/pedido.css">
-    <title>Delivery</title>
+    <title>Faça seu Pedido</title>
 </head>
 <body>
+    <div class="header-wrapper"></div>
     <h1 class="home__title">Faça seu pedido no <span class="logo">FastFit</span></h1>
     <table class="table" border="1">
         <tr>
@@ -85,11 +86,11 @@
     </table>
 
     <div class="home__btn">
-        <span href="" class="btn-outline" onclick="(function(){
-            window.alert('O envio de pedidos por delivery ainda será implementado!');
-            })()">
+        <span href="" class="btn-outline" onclick="fazerPedido()">
             PEÇA POR DELIVERY
         </span>
     </div>
+
+    <script src="assets/js/pedido.js"></script>
 </body>
 </html>

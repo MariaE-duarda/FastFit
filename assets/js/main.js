@@ -1,72 +1,133 @@
-/*------------ SHOW MENU-------------*/
-const showMneu = (toggleId, navId) => {
-    const toggle = document.getElementById(toggleId),
-        nav = document.getElementById(navId)
-    /*valida se se existe as variaveis*/
-    if (toggle && nav) {
-        /*aqui adiciono a class show-menu na div com a class nav__menu*/
-        toggle.addEventListener('click', () => {
-            /*adicina a class show-menu na div que tem o id nav-menu */
-            nav.classList.toggle('show-menu')
-        })
-    }
+function funcao(){
+    alert('Foi clicado')
 }
-showMneu('nav-toggle', 'nav-menu')
 
-/*------------ REMOVER MENU MOBILE-------------*/
-const navLink = document.querySelectorAll('.nav__link')
-function linkAction() {
-    const navMenu = document.getElementById('nav-menu')
-    /*Quando um link for clicado a class show-menu será removido*/
-    navMenu.classList.remove('show-menu')
+function pedido(){
+    alert('Fez um pedido.')
 }
-navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*==================== DEIXA O LINK CLICADO COM A CLASS ACTIVE-LINK ====================*/
-const linkColor = document.querySelectorAll('.nav__link')
-
-function colorLink(){
-    if(linkColor){
-        linkColor.forEach(L => L.classList.remove('active-link'))
-        this.classList.add('active-link')
+function boaComida01(){
+    if(confirm("Gostou do Mousse de Maracujá? \nFaça seu pedido conosco!")){
+            window.location="pedido.html";
     }
 }
 
-linkColor.forEach(L=> L.addEventListener('click', colorLink))
+function boaComida02(){
+     if(confirm("Gostou do Pudim Fit? \nFaça seu pedido conosco!")){
+             window.location="pedido.html";
+     }
+ }
 
-/*------------BOX SHADOW NO HEADER-------------*/
-function scrollHeader(){
-    const scrollHeader = document.getElementById('header');
-    // Quando o scroll tiver um altura maior que 200 será adiconado a class scroll-header na tag Header
-    if(this.scrollY >= 200) scrollHeader.classList.add('scroll-header'); else scrollHeader.classList.remove('scroll-header')
-}
-window.addEventListener('scroll', scrollHeader)
+ function boaComida03(){
+     if(confirm("Gostou do Sufle de banana? \nFaça seu pedido conosco!")){
+             window.location="pedido.html";
+     }
+ }
 
-/*------------SHOW SCROLL TOP------------- */
-function scrollTop(){
-    const scrollTop = document.getElementById('scroll-top');
-    // Quando o scroll tiver um altura maior que 560 será adiconado a class scroll-top
-    if(this.scrollY >= 560) scrollTop.classList.add('scroll-top'); else scrollTop.classList.remove('scroll-top')
-}
-window.addEventListener('scroll', scrollTop)
+ function boaComida04(){
+     if(confirm("Gostou do Petit gâteau fit? \nFaça seu pedido conosco!")){
+             window.location="pedido.html";
+     }
+ }
 
-const button= document.querySelector(".btn");
-function funcao() {
-    button.window.alert('Mensagem enviada!')
+ function boaComida05(){
+     if(confirm("Gostou do Crème Brûlée? \nFaça seu pedido conosco!")){
+             window.location="pedido.html";
+     }
+ }
+
+ function boaComida06(){
+     if(confirm("Gostou do Bolo de Chuva fit? \nFaça seu pedido conosco!")){
+             window.location="pedido.html";
+     }
+ }
+
+ function boaComida07(){
+     if(confirm("Gostou do Mousse de limão? \nFaça seu pedido conosco!")){
+             window.location="pedido.html";
+     }
+ }
+
+ function boaComida08(){
+     if(confirm("Gostou do Sanduíche funcional? \nFaça seu pedido conosco!")){
+             window.location="pedido.html";
+     }
+ }
+
+ function boaComida09(){
+     if(confirm("Gostou do Empadão Fit? \nFaça seu pedido conosco!")){
+             window.location="pedido.html";
+     }
+ }
+
+ function boaComida10(){
+     if(confirm("Gostou do Omelete de carne? \nFaça seu pedido conosco!")){
+             window.location="pedido.html";
+     }
+ }
+
+ function boaComida11(){
+     if(confirm("Gostou do Panqueca de frango? \nFaça seu pedido conosco!")){
+             window.location="pedido.html";
+     }
+ }
+
+ function boaComida12(){
+     if(confirm("Gostou do Pizza de frango? \nFaça seu pedido conosco!")){
+             window.location="pedido.html";
+     }
+ }
+
+ function boaComida13(){
+     if(confirm("Gostou do Hambúguer Fit? \nFaça seu pedido conosco!")){
+             window.location="pedido.html";
+     }
+ }
+
+ function boaComida14(){
+     if(confirm("Gostou do Batata Assada? \nFaça seu pedido conosco!")){
+             window.location="pedido.html";
+     }
+ }
+
+ function boaComida15(){
+     if(confirm("Gostou do Croissant? \nFaça seu pedido conosco!")){
+             window.location="pedido.html";
+     }
+ }
+ 
+function mensagem() {
+    nome = document.getElementById('name').value;
+    email = document.getElementById('email').value;
+    mensagens = document.getElementById('mensagem').value;
+
+    if (nome == ""){
+        alert('Informe o nome antes de fazer o envio da mensagem!')
+        nome.focus()
+    }
+    if (email == ""){
+        alert('É necessário informar o e-mail!')
+    }
+    if (mensagens == ""){
+        alert('Não se esqueça de nos mandar seu informe, ' + nome)
+    }
+    else{
+        confirm('Mensagem enviada com sucesso, '+ nome)
+    }
+
 }
 
-function window(){
-    window.alert('Olá')
+function conferir(){
+    nome = document.getElementById('btn');
+    email = document.getElementById('email');
+    mensagens = document.getElementById('mensagem');
+
+        if(nome.value != ""){
+            div.classList.add('secActive');
+        }else{
+            div.classList.remove('secActive');
+        }
+
 }
 
-function novaAba(){
-    varWindow = window.open (
-    'popup.html',
-    'pagina',
-    "width=350, height=255, top=100, left=110, scrollbars=no " );
-}
 
-function acao() {
-    let modal = document.querySelector('.modal')
-    modal.style.display = 'block';
-}

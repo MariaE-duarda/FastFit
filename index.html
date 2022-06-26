@@ -1,27 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fast Fit</title>
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-    <!--BoxIcons-->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-
-    <!--css-->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-    <!--------------SCROLL TOP------------------------>
+    <script src="assets/js/main.js"></script>
+
     <a href="#" class="scrolltop" id="scroll-top">
         <i class='bx bx-chevrons-up scroll__top__icon'></i>
     </a>
-
-    <!--------------HEADER------------------------>
     <header class="header" id="header">
-        <!-- NAV -->
         <nav class="nav bd-container">
             <h1><a href="#" class="logo">FastFit</a></h1>
 
@@ -35,19 +29,14 @@
                 </ul>
             </div>
 
-            <!--MENU TOGGLE-->
             <div class="nav__toggle">
                 <i class='bx bx-menu-alt-right' id="nav-toggle"></i>
             </div>
-            <!-- END MENU TOGGLE -->
         </nav>
-        <!-- END NAV -->
     </header>
-    <!-- END HEADER -->
 
-    <!--MAIN-->
     <main>
-        <!--HOME-->
+
         <section class="home" id="home">
             <div class="home__container bd-container bd-grid">
                 <div class="home__data">
@@ -66,12 +55,11 @@
                 <img src="assets/img/salada-hero.png" alt="salada principal" class="home__img">
             </div>
         </section>
-        <!-- END HOME -->
 
-        <!-- SOBRE -->
         <section class="about bg-container section" id="sobre">
             <h1 class="section-title">Sobre a FastFit</h1>
-            <h2 class="section-subtitle">3 adolescentes com 1 ideia gênial.</h2>        
+            <h2 class="section-subtitle">3 adolescentes com 1 ideia gênial.</h2>
+            <h3 class="names">Maria Eduarda de Araújo Freire <br> Ravel Soares de Oliveira <br> Lucas Saraiva Brasil</h3>        
             <div class=" bd-container bd-grid">
                 
                 <div class="about__data">
@@ -84,20 +72,18 @@
                 </div>
             </div>
         </section>
-        <!-- END SOBRE -->
 
-        <!-- CARDÁPIO -->
         <section class="cardapio section" id="cardapio">
             <h1 class="section-title">Cardápio</h1>
             <h2 class="section-subtitle">Sobremesas oferecidas:</h2>
             <div class="cardapio__container bd-grid">
 
-                <div class="card">
+                <div class="card" id="card" onclick="boaComida01()">
                     <div class="card__img">
                         <img src="assets/img/salada-1.jpg" alt="Salada Primavera"> 
                     </div>
                     <div class="card__data">
-                        <h3 width="30">Mousse de Maracujá</h3>
+                        <h3>Mousse de Maracujá</h3>
                         <div class="card__descripition">
                             <small>Leite vegetal, leite de coco, xilitol, poupa de maracujá</small>
                         </div>
@@ -107,7 +93,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="boaComida02()">
                     <div class="card__img">
                         <img src="assets/img/salada-2.jpg" alt="Salada Green">
                     </div>
@@ -122,7 +108,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="boaComida03()">
                     <div class="card__img">
                         <img src="assets/img/salada-3.jpg" alt="Salada Green">
                     </div>
@@ -137,7 +123,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="boaComida04()">
                     <div class="card__img">
                         <img src="assets/img/salada-2.jpg" alt="Salada Fit">
                     </div>
@@ -152,7 +138,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="boaComida05()">
                     <div class="card__img">
                         <img src="assets/img/salada-1.jpg" alt="Salada Primavera">
                     </div>
@@ -167,7 +153,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="boaComida06()">
                     <div class="card__img">
                         <img src="assets/img/salada-1.jpg" alt="Salada Primavera">
                     </div>
@@ -182,7 +168,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="boaComida07()">
                     <div class="card__img">
                         <img src="assets/img/salada-1.jpg" alt="Salada Primavera">
                     </div>
@@ -203,7 +189,7 @@
             <h2 class="section-subtitle">Lanches da casa:</h2>
             <div class="cardapio__container bd-grid">
 
-                <div class="card">
+                <div class="card" onclick="boaComida08()">
                     <div class="card__img">
                         <img src="assets/img/salada-1.jpg" alt="Salada Primavera"> 
                     </div>
@@ -218,7 +204,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="boaComida09()">
                     <div class="card__img">
                         <img src="assets/img/salada-2.jpg" alt="Salada Green">
                     </div>
@@ -233,7 +219,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="boaComida10()">
                     <div class="card__img">
                         <img src="assets/img/salada-3.jpg" alt="Salada Green">
                     </div>
@@ -248,7 +234,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="boaComida11()">
                     <div class="card__img">
                         <img src="assets/img/salada-2.jpg" alt="Salada Fit">
                     </div>
@@ -263,7 +249,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="boaComida12()">
                     <div class="card__img">
                         <img src="assets/img/salada-1.jpg" alt="Salada Primavera">
                     </div>
@@ -278,7 +264,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="boaComida13()">
                     <div class="card__img">
                         <img src="assets/img/salada-1.jpg" alt="Salada Primavera">
                     </div>
@@ -293,7 +279,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="boaComida14()">
                     <div class="card__img">
                         <img src="assets/img/salada-1.jpg" alt="Salada Primavera">
                     </div>
@@ -308,7 +294,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="boaComida15()">
                     <div class="card__img">
                         <img src="assets/img/salada-1.jpg" alt="Salada Primavera">
                     </div>
@@ -325,9 +311,6 @@
             </div>
         </section>
 
-        <!-- END CARDÁPIO -->
-
-        <!-- DELIVERY -->
         <section class="delivery" id="delivery">
             <div class="delivery__container">
                 <div class="delivery__data">
@@ -337,9 +320,7 @@
                 </div>
             </div>
         </section>
-        <!-- END DELIVERY -->
 
-        <!-- CONTATO -->
         <section class="contato section" id="contato">
             <h1 class="section-title">Contato</h1>
             <h2 class="section-subtitle">Estamos ansiosos em falar com você!</h2>
@@ -358,24 +339,19 @@
                 </div>
                 <div class="contato__form">
                     <h3 class="contato__title">Fale Conosco</h3>
-                    <form class="form-control">
+                    <div class="form-control">
                         <label for="name">NOME</label>
-                        <input type="text" id="name">
+                        <input type="text" id="name" name="name">
                         <label for="email">E-MAIL</label>
-                        <input type="email" id="email">
+                        <input type="email" name="email" id="email">
                         <label for="mensagem">MENSAGEM</label>
                         <textarea name="mensagem" id="mensagem" cols="30" rows="5"></textarea>
-                        <button class="btn" onclick="(function(){
-                            window.alert('Sua mensagem foi enviada com sucesso.')
-                            })()">ENVIAR MENSAGEM</button>
-                    </form>
+                        <button class="btn" id="btn" onclick="mensagem()">ENVIAR MENSAGEM</button>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- END CONTATO -->
         
-
-        <!-- COMPARTILHAR -->
         <section class="compartilhar">
             <div class="compartilhar__container">
                 <h1 class="section-title">Compartilhe</h1>
@@ -386,11 +362,8 @@
                 </div>
             </div>
         </section>
-        <!-- END COMPARTILHAR -->
     </main>
-    <!-- END MAIN -->
 
-    <!-- FOOTER -->
     <footer class="footer section bg-container">
         <div class="footer__container bd-container">
             <div class="company">
@@ -422,9 +395,5 @@
         </div>
         <p>@2022 Maria Eduarda de Araújo Freire</p>
     </footer>
-    <!-- END FOOTER -->
-
-    <script type="text/javascript" src="assets/js/main.js">
-    </script>
 </body>
 </html>
