@@ -54,7 +54,7 @@ body {
 }
 
 .home__title {
-    font-size: 30px;
+    font-size: 38px;
     color: var(--text-color);
     display: block;
     position: relative;
@@ -63,7 +63,7 @@ body {
 
 .logo{
     font-family: var(--font-logo);
-    font-size: 40px;
+    font-size: 50px;
     padding-top: 3rem;
     background: linear-gradient(to right, #F66B0E 0%, #EB5353 100%);
     background-clip: text;
@@ -96,6 +96,10 @@ td {
     transition: 0.5s;
 }
 
+td, tr, th{
+    padding: 0 73px;
+}
+
 td:hover{
     color: #F15412;
     border-color: #EB5353;
@@ -115,7 +119,7 @@ div a .btn-outline{
 }
 
 .btn {
-    width: 30%;
+    width: 61%;
     background: linear-gradient(to right, #F15412 0%, #EB5353 100%);
     border: none;
     outline: none;
@@ -143,21 +147,21 @@ div a .btn-outline{
 @media (max-width: 960px){
     table{
         margin-top: 20px;
-        font-size: 15px;
+        font-size: 10px;
     }
     th{
         padding: 5px;
     }
     .btn{
-        width: 90%;
+        width: 50%;
         font-size: 13px;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
     }
     .logo{
-        font-size: 35px;
+        font-size: 45px;
     }
     .home__title{
-        font-size: 30px;
+        font-size: 35px;
     }
     body{
         margin-top: 20px;
@@ -170,6 +174,18 @@ div a .btn-outline{
         padding-top: 5px;
         padding-bottom: 5px;
     }
+    td, th, tr{
+        padding: 0 40px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
 
+}
 
+@media (max-width: 543px){
+    .btn{
+        width: 100%;
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
 }
