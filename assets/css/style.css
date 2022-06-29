@@ -116,6 +116,11 @@ img {
     transition: all 0.4s ease-in-out;
 }
 
+a.btn.centro{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
 .btn:hover {
     letter-spacing: 3px;
 }
@@ -528,6 +533,10 @@ h1.section-title{
     background-color: var(--first-color_alt);
 }
 
+a .button{
+
+}
+
 /*----------DELIVERY-----------*/
 .delivery {
     height: 100vh;
@@ -907,8 +916,12 @@ textarea {
         justify-content: space-between;
     }
 
-    .btn {
-        margin-top: px;
+    .btn.centro {
+        width: 100%;
+        letter-spacing: 1px;
+        font-size: 14px;
+        text-align: center;
+        display: flex;
     }
     .contato__title{
         text-align: center;
