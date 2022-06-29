@@ -11,7 +11,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(-45deg, #F15412 0%, #EB5353 100%);
+    background: linear-gradient(to right, #F15412 0%, #EB5353 50%, #c63838 100%);
 }
 .container{
     position: relative;
@@ -20,14 +20,15 @@ body{
     border-radius: 6px;
     padding: 30px;
     margin: 0 15px;
-    background-color: #fff;
+    background-color: #333;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
+
 .container header{
     position: relative;
     font-size: 20px;
     font-weight: 600;
-    color: #333;
+    color: #fff;
 }
 .container header::before{
     content: "";
@@ -43,12 +44,13 @@ body{
     position: relative;
     margin-top: 16px;
     min-height: 490px;
-    background-color: #fff;
+    background-color: #333;
     overflow: hidden;
 }
+
 .container form .form{
     position: absolute;
-    background-color: #fff;
+    background-color: #333;
     transition: 0.3s ease;
 }
 .container form .form.second{
@@ -72,7 +74,7 @@ form.secActive .form.first{
     font-size: 16px;
     font-weight: 500;
     margin: 6px 0;
-    color: #333;
+    color: #fff;
 }
 .container form .fields{
     display: flex;
@@ -89,7 +91,7 @@ form .fields .input-field{
 .input-field label{
     font-size: 12px;
     font-weight: 500;
-    color: #2e2e2e;
+    color: #fff;
 }
 .input-field input, select{
     outline: none;
@@ -125,7 +127,7 @@ form .fields .input-field{
     color: #fff;
     border-radius: 5px;
     margin: 150px 0;
-    background-color: #fa5732f8;
+    background: linear-gradient(to right, #F15412 0%, #EB5353 50%, #c63838 100%);
     transition: all 0.1s linear;
     cursor: pointer;
 }
